@@ -1,0 +1,8 @@
+name: Vomit
+main: me.Gon_Bao.Vomit.Main
+version: 2.0.0
+author: Gon_Bao
+commands:
+ vomit:
+   description: Reload config
+   permission: vomit.reload
