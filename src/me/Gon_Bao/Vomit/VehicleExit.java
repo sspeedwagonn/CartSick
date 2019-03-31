@@ -15,6 +15,8 @@ public class VehicleExit implements Listener {
 
     @EventHandler
     public void onVehicleExit(VehicleExitEvent event) {
+        if (!(event.getExited() instanceof Player)) return;
+
         Player player = (Player) event.getExited();
 
         if (event.getVehicle() instanceof Minecart && !VomitTimer.active.contains(player) && player.hasPermission("vomit.allow")) {
