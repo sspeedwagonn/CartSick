@@ -1,4 +1,4 @@
-package me.Gon_Bao.Vomit;
+package me.gon_bao.vomit;
 
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Minecart;

@@ -1,4 +1,4 @@
-package me.Gon_Bao.Vomit;
+package me.gon_bao.vomit;
 
 import org.bukkit.Bukkit;
 import org.bukkit.event.Listener;
@@ -25,8 +25,8 @@ public class Main extends JavaPlugin implements Listener {
 
     public void onEnable() {
         plugin = this;
-        Bukkit.getServer().getPluginManager().registerEvents(new me.Gon_Bao.Vomit.VehicleExit(), this);
-        Bukkit.getPluginCommand("vomit").setExecutor(new me.Gon_Bao.Vomit.Commands());
+        Bukkit.getServer().getPluginManager().registerEvents(new VehicleExit(), this);
+        Bukkit.getPluginCommand("vomit").setExecutor(new Commands());
         loadConfiguration();
         new Metrics(this);
         VomitTimer.startTimer();
