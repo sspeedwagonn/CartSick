@@ -37,7 +37,7 @@ public class Metrics {
             final String examplePackage = new String(new byte[]{'y', 'o', 'u', 'r', '.', 'p', 'a', 'c', 'k', 'a', 'g', 'e'});
             // We want to make sure nobody just copy & pastes the example and use the wrong package names
             if (Metrics.class.getPackage().getName().equals(defaultPackage) || Metrics.class.getPackage().getName().equals(examplePackage)) {
-                throw new IllegalStateException("bStats me.gon_bao.vomit.Metrics class has not been relocated correctly!");
+                throw new IllegalStateException("bStats Metrics class has not been relocated correctly!");
             }
         }
     }
@@ -121,7 +121,7 @@ public class Metrics {
 
         if (enabled) {
             boolean found = false;
-            // Search for all other bStats me.gon_bao.vomit.Metrics classes to see if we are the first one
+            // Search for all other bStats Metrics classes to see if we are the first one
             for (Class<?> service : Bukkit.getServicesManager().getKnownServices()) {
                 try {
                     service.getField("B_STATS_VERSION"); // Our identifier :)
@@ -262,7 +262,7 @@ public class Metrics {
         final JSONObject data = getServerData();
 
         JSONArray pluginData = new JSONArray();
-        // Search for all other bStats me.gon_bao.vomit.Metrics classes to get their plugin data
+        // Search for all other bStats Metrics classes to get their plugin data
         for (Class<?> service : Bukkit.getServicesManager().getKnownServices()) {
             try {
                 service.getField("B_STATS_VERSION"); // Our identifier :)
