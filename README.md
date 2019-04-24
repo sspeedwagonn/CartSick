@@ -29,8 +29,10 @@ Message:
 
 <h1>Links</h1>
 
-[Official Spigot page](https://www.spigotmc.org/resources/vomit.45385/)
+[Spigot page](https://www.spigotmc.org/resources/vomit.45385/)
 
-[Donation link](https://paypal.me/Pascal37432)
+[Donations](https://paypal.me/Pascal37432)
+
+[bStats](https://bstats.org/plugin/bukkit/Vomit)
 
 [Inspired by Craftventure](https://craftventure.net/)
