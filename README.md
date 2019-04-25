@@ -31,7 +31,7 @@ Message:
 
 [Spigot page](https://www.spigotmc.org/resources/vomit.45385/)
 
-[Donations](https://paypal.me/Pascal37432)
+[Donate](https://paypal.me/Pascal37432)
 
 [bStats](https://bstats.org/plugin/bukkit/Vomit)
 
