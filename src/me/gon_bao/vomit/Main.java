@@ -5,6 +5,8 @@ import org.bukkit.event.Listener;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
 
+import java.util.Objects;
+
 public class Main extends JavaPlugin implements Listener {
 
     private static Plugin plugin;
@@ -26,7 +28,7 @@ public class Main extends JavaPlugin implements Listener {
     public void onEnable() {
         plugin = this;
         Bukkit.getServer().getPluginManager().registerEvents(new VehicleExit(), this);
-        Bukkit.getPluginCommand("vomit").setExecutor(new Commands());
+        Objects.requireNonNull(Bukkit.getPluginCommand("vomit")).setExecutor(new Commands());
         loadConfiguration();
         new Metrics(this);
         VomitTimer.startTimer();
