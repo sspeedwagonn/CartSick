@@ -13,6 +13,7 @@ import java.util.Random;
 
 public class VehicleExit implements Listener {
 
+    @SuppressWarnings("unused")
     @EventHandler
     public void onVehicleExit(VehicleExitEvent event) {
         if (!(event.getExited() instanceof Player)) return;
