@@ -2,6 +2,7 @@ package me.gon_bao.vomit;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
+import org.bukkit.Location;
 import org.bukkit.Particle;
 import org.bukkit.entity.Player;
 
@@ -35,14 +36,9 @@ class VomitTimer {
                 } else {
                     ticks.put(player, 0);
                 }
-                player.getWorld().spawnParticle(Particle.SLIME,
-                        player.getLocation().getX(),
-                        player.getLocation().getY() + 1.5,
-                        player.getLocation().getZ(),
-                        50,
-                        0,
-                        0,
-                        0);
+                Location playerLocation = player.getLocation();
+                Location spawnParticleLocation = new Location(playerLocation.getWorld(), playerLocation.getX(), playerLocation.getY() + 1.5, playerLocation.getZ());
+                player.getWorld().spawnParticle(Particle.SLIME, spawnParticleLocation, 50);
             }
         }, 0, 0);
     }
