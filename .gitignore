@@ -24,4 +24,6 @@ hs_err_pid*
 
 # Other
 *.iml
-*.xml
+**/.idea/
+/target/
+dependency-reduced-pom.xml
