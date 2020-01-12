@@ -1,7 +1,9 @@
-<h1>Introduction:</h1>
+# Vomit [![Build Status](https://travis-ci.com/pascal541/Vomit.svg?branch=master)](https://travis-ci.com/pascal541/Vomit)
+
+## Introduction:
 This is a simple minecraft bukkit plugin that lets players puke once they leave a minecart. There are a few things that you can configure (see config file). If you discover any bugs, errors or if you want a function to be added, please let me know.
 
-<h1>Commands:</h1>
+## Commands:
 
 ```
 /vomit
@@ -9,14 +11,14 @@ Description: Reloads the config file
 Permissions: vomit.reload
 ```
 
-<h1>Permissions:</h1>
+## Permissions:
 
 ```
 vomit.allow -> Checks if player is allowed to vomit
 vomit.reload -> permission to use the /vomit command
 ```
 
-<h1>Config file:</h1>
+## Config file:
 
 ```
 Chance to puke (%): The change needs to be a number between 0 and 100
@@ -27,7 +29,7 @@ Message:
   Stop vomit: The message players receive when they stop vomitting
   ```
 
-<h1>Links</h1>
+## Links
 
 [Spigot page](https://www.spigotmc.org/resources/vomit.45385/)
 
