@@ -13,7 +13,7 @@ import java.util.Iterator;
 class VomitTimer {
 
     static ArrayList<Player> active = new ArrayList<>();
-    private static HashMap<Player, Integer> ticks = new HashMap<>();
+    private static final HashMap<Player, Integer> ticks = new HashMap<>();
 
     static void startTimer() {
         Bukkit.getServer().getScheduler().scheduleSyncRepeatingTask(Main.getPlugin(), () -> {
@@ -38,7 +38,7 @@ class VomitTimer {
                 }
                 Location playerLocation = player.getLocation();
                 Location spawnParticleLocation = new Location(playerLocation.getWorld(), playerLocation.getX(), playerLocation.getY() + 1.5, playerLocation.getZ());
-                player.getWorld().spawnParticle(Particle.SLIME, spawnParticleLocation, 50);
+                player.getWorld().spawnParticle(Particle.ITEM_SLIME, spawnParticleLocation, 50);
             }
         }, 0, 0);
     }

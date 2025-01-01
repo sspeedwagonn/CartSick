@@ -28,8 +28,8 @@ public class VehicleExit implements Listener {
                     player.sendMessage(ChatColor.translateAlternateColorCodes('&', Main.message));
                 }
 
-                player.addPotionEffect(new PotionEffect(PotionEffectType.CONFUSION, ticks + 80, 0));
-                player.addPotionEffect(new PotionEffect(PotionEffectType.SLOW, ticks, 4));
+                player.addPotionEffect(new PotionEffect(PotionEffectType.NAUSEA, ticks + 80, 0));
+                player.addPotionEffect(new PotionEffect(PotionEffectType.SLOWNESS, ticks, 4));
 
                 VomitTimer.active.add(player);
             }
