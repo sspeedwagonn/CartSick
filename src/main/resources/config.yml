@@ -1,6 +1,6 @@
-Chance to puke (%): 10
-Time (seconds): 10
-Message:
-  Enable: true
-  Start vomit: 'I am not feeling well'
-  Stop vomit: 'I feel better again'
+chance: 10
+time: 10
+message:
+  enabled: true
+  start: "I'm not feeling well..."
+  stop: "I feel better again!"

@@ -1,9 +1,8 @@
-name: Vomit
-main: me.gon_bao.vomit.Main
-version: ${project.version}
-api-version: 1.15
-author: Gon_Bao
+name: CartSick
+version: '1.0'
+main: net.civicraft.cartSick.CartSick
+api-version: '1.21'
 commands:
- vomit:
-   description: Reload config
-   permission: vomit.reload
+  cartsick:
+    permission: cartsick.reload
+    description: Reloads CartSick config.yml
