@@ -1,4 +1,4 @@
-# Vomit [![Build Status](https://travis-ci.com/pascal541/Vomit.svg?branch=master)](https://travis-ci.com/pascal541/Vomit)
+# To view the updated code, switch over to the `latest` branch.
 
 ## Introduction:
 This is a simple minecraft bukkit plugin that lets players puke once they leave a minecart. There are a few things that you can configure (see config file). If you discover any bugs, errors or if you want a function to be added, please let me know.
